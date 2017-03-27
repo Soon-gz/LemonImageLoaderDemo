@@ -56,7 +56,7 @@ MEMORY_LRU_CACHE:内存缓存，使用当前手机内存的8分之1来缓存图�
 NO_CAHCE:不需要缓存。
 默认是使用硬盘缓存。
 
-####placeHolder(@DrawableRes int resId)
+#### placeHolder(@DrawableRes int resId)
 占位图片，失败或者加载过程显示的图片
 
 #### into(ImageView imageView)
