@@ -1,6 +1,6 @@
-##[我的博客](http://blog.csdn.net/sw5131899) 
+## [我的博客](http://blog.csdn.net/sw5131899) 
 
-###手写高并发图片加载框架
+### 手写高并发图片加载框架
 
 图片加载框架在当前已经是相当的成熟了，想要有创新。就是需要从图片加载速度和图片缓存，
 还有内存占用和生命周期监控上去做文章。glide做的就比较好。出自squre团队的良心作品。
@@ -13,13 +13,14 @@
 只能说是非常一般的框架。但是这个LemonImageLoader可以作为从未了解过图片加载框架底层的程序猿们入门的框架。
 并没有采用一些太过新奇的技术。简单易懂，快速上手。
 
-###框架设计逻辑图
+### 框架设计逻辑图
 
-    ![](https://github.com/SingleShu/LemonImageLoaderDemo/raw/master/logo/ImageLoader.png) 
+![](https://github.com/SingleShu/LemonImageLoaderDemo/raw/master/logo/ImageLoader.png)
 
-###ImageLoaderUML
-	
-	![](https://github.com/SingleShu/LemonImageLoaderDemo/raw/master/logo/ImageLoaderUML.png) 
+### ImageLoaderUML
+
+![](https://github.com/SingleShu/LemonImageLoaderDemo/raw/master/logo/ImageLoaderUML.png)
+
 	
 整体思路如上所示。具体的还是要看源码才行。
 使用方式：导入gradle:
@@ -27,10 +28,10 @@
 compile 'com.singleshu888:LemonImageLoader:1.0.1'
 ```
 
-###API介绍
+### API介绍
 所有的都是通过LemonImageLoader这个类静态调用，非常方便。
 
-####with(Context context)
+#### with(Context context)
 设置图片加载的上下文。
 
 ####load(String url)
