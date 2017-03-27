@@ -1,4 +1,4 @@
-## [我的博客](http://blog.csdn.net/sw5131899) 
+## [我的博客](http://blog.csdn.net/sw5131899/article/details/66970195) 
 
 ### 手写高并发图片加载框架
 
@@ -34,21 +34,21 @@ compile 'com.singleshu888:LemonImageLoader:1.0.1'
 #### with(Context context)
 设置图片加载的上下文。
 
-####load(String url)
+#### load(String url)
 使用网络地址加载图片，底层自动选择图片加载器
 
-####load(File file)
+#### load(File file)
 加载本地图片， 并会对图片进行压缩，适应控件。
 
-####load(@DrawableRes int resId)
+#### load(@DrawableRes int resId)
 加载本地资源图片
 
 
-####loaderPolicy(IPolicy policy)
+#### loaderPolicy(IPolicy policy)
 加载策略，是对阻塞式队列起作用。是先进先出，还是先进后出的一个选择。像在ListView使用时希望后面的图片先加载，
 就可以设置加载策略。
 
-####cachePolicy(CacheMode mode)
+#### cachePolicy(CacheMode mode)
 CacheMode是一个枚举类型。
 DOUBLE_CAHCE:双缓存，硬盘和内存都会存上，优先使用内存
 DISK_LRU_CACHE：硬盘缓存，当app卸载时会随着一起被删除
@@ -59,10 +59,10 @@ NO_CAHCE:不需要缓存。
 ####placeHolder(@DrawableRes int resId)
 占位图片，失败或者加载过程显示的图片
 
-####into(ImageView imageView)
+#### into(ImageView imageView)
 显示的控件，具体加载逻辑。
 
-####onFinishListener(BitmapListener bitmapListener)
+#### onFinishListener(BitmapListener bitmapListener)
 图片加载完成后不显示，选择回调处理。
 
 
